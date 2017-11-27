@@ -2,6 +2,8 @@
 
 This is my template for an academic CV. It's actually just a regular `article` with some packages. I always end up having to hack existing templates to my taste, and find the cv-specific macros too restrictive, so I thought I would just structure my CV like a normal article and do some slight aesthetic changes in the preamble. Nothing in the actual document is non-standard. Just some normal sections and a list or two. For pushing things to the right, I just use `\hfill` (usually dates).
 
+Check the [pdf file](cv.pdf) for a preview.
+
 ## Description
 
 The following packages are used:
