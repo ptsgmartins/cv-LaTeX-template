@@ -1,0 +1,164 @@
+% LaTeX template for (Academic) CV.
+% The template consists only of this file.
+% Document is to be structured as a normal article.
+% Created in 2017 by Pedro Tiago Martins (ptmartins.info).
+% Dedicated to the public domain.
+
+\documentclass{article}
+\usepackage{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{libertine} %font
+\usepackage[margin=2cm]{geometry} %margins
+\usepackage{fancyhdr} % header/footer
+\usepackage{lastpage} %last page (for footer)
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[R]{\thepage/\pageref{LastPage}}
+
+\usepackage[usenames,dvipsnames,svgnames,x11names,table]{xcolor} % color
+\newcommand{\cvcolor}{\color{DodgerBlue4}} %easier to change color consistently
+\usepackage{doi} % easy input of doi numbers
+\usepackage{enumitem} % customized lists (reset counters with the resume option)
+\usepackage{titlesec} % customized section headers
+\usepackage{titling} % customized title
+\setlength\parindent{0em} 
+\setlength{\parskip}{0.5em}
+
+%Section Header format
+\titleformat{\section}
+{\LARGE\scshape}{}{0em}{\cvcolor}[\titlerule]
+
+\titleformat{\subsection}
+{\large\scshape}{}{0em}{\cvcolor}
+
+\titleformat{\subsubsection}
+{\bfseries}{}{0em}{}
+
+%Section header spacing
+\titlespacing{\section}
+{0em}{0em}{0em}
+
+\titlespacing{\subsection}
+{0em}{0.75em}{0em}
+
+\titlespacing{\subsubsection}
+{0em}{0em}{0em}
+
+%Title
+\renewcommand{\maketitle}{
+\begin{center}
+{\Huge\theauthor}\\
+{\Large \cvcolor{Department of Research, University of Investigation}}\\
+{\itshape So and So Street 123, 456789 City, Country}\\
+email@example.com --- example.com\\
+\vspace{0.25em}
+{\color{Gray}(last update: \today)}
+\end{center}
+}
+
+\begin{document}
+
+\title{Curriculum Vitae} % doesn't actually show up anywhere
+\author{John Doe}
+
+\maketitle
+
+\section{Education}
+
+\textbf{PhD, More Sciencey Things}\hfill\emph{2016}$\rightarrow$\\
+University of Investigation, Country
+
+\textbf{MA, Sciencey Things}\hfill\emph{2010}\\
+University of Investigation, Country
+
+\textbf{BA, Stuff}\hfill\emph{2010}\\
+University of Research, Country
+
+\subsection{Additional Education}
+
+\textbf{That one Summer School for School Credit}\hfill\emph{2012}\\
+Institute of Cool Topics, Country 
+
+\section{Grants \& Awards}
+
+\textbf{Best Presentation}\hfill \emph{April 2012}$\rightarrow$\\
+Interesting Conference, City, Country
+
+\textbf{Prestigious Grant}\hfill \emph{2011}\\
+National Institute of Prestigious grants
+
+\section{Projects}
+
+\textbf{Cool Project}\hfill \emph{June, 2013--June, 2014}\\
+Foundation that funds projects (PI: Dr. Big Shot)\\
+(Research Assistant)
+
+\section{Publications}
+
+\subsection{Papers}
+
+\begin{enumerate}[label={[\arabic*]}]
+
+\item \textbf{Doe. J.}; Smith, J.; Someone, A. 2017. Interesting paper. \textit{Journal of Research}. 12: 1--2. \doi{some doi number}
+
+\item \textbf{Doe, J.} 2013. Not so interesting paper. \textit{Random Journal} 3: 34--39. \doi{some other doi number}
+
+\end{enumerate}
+
+\subsection{Book Chapters}
+
+\begin{enumerate}[resume*] %notice the resume* option; counter and format continue
+
+\item \textbf{Doe. J.} 2015. That chapter I wrote. In Author, F. (ed.) \emph{Book full of chapters}. City: Publisher, 219--232. \doi{some doi number}
+
+\end{enumerate}
+
+\subsection{In Proceedings}
+
+\begin{enumerate}[resume*] 
+
+\item Smith, A.; \textbf{Doe, J.}. 2016. Cool paper. In \emph{Proceedings of ABC15}. City: Publisher, 4--17.
+
+\end{enumerate}
+
+\subsection{Reviews}
+
+\begin{enumerate}[resume*]
+
+\item \textbf{Doe. J.} 2014. Review of that one book that I did so I would get published.
+\emph{Journal that will not accept my papers but accepted my book review} 4: 23--25.
+\end{enumerate}
+
+\section{Presentations}
+
+\begin{enumerate}[label={[\arabic*]}]
+
+\item \textbf{Doe, J.} \emph{Talk about stuff}. Cool Conference. University of Some Island, Country. August 15, 2015
+
+\item \textbf{Doe, J.} \emph{Talk about really specific stuff}. Extremely specific Workshop. Hotel Somewhere, Country. January 2013
+
+\end{enumerate}
+
+\section{Service}
+
+\subsection{Reviewing}
+
+\subsubsection{Journals}
+
+\emph{Journal of Ok papers} (2013)
+
+\subsubsection{Conferences}
+
+\emph{ABC16} (2017)
+
+\section{Technical Skills}
+
+Microsoft Paint
+
+\section{Languages}
+
+\textbf{English} (native)
+
+\end{document}
