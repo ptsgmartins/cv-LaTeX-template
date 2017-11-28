@@ -14,7 +14,7 @@ The following packages are used:
 - `fancyhdr` - for custom footer (basically, page number to the right)
 - `lastpage` - so that I can refer to the last page in the footer (i.e. "1/5")
 - `doi` - for easy input of doi numbers (good if you list publications)
-- `enumitem` - for customized lists. I use it to add some square brackets to the numbered lists, and more importantly to be able to resume counters (with the `resume*` option when beginning a list). For example, if I want to "count" all my publications, but they are spread across different subsections (e.g. Papers, Chapters), I want the counter to continue and not start over.
+- `enumitem` - for customized lists. I use it to add square brackets to the numbered lists, and more importantly to be able to resume counters (with the `resume*` option when beginning a list). For example, if I want to "count" all my publications, but they are spread across different subsections (e.g. Papers, Chapters), I want the counter to continue and not start over.
 - `titlesec` - customized section headers (format, size, spacing)
 - `xcolor` - I use color in the section headers
 - `titling` - customized title block. A bit of overkill (could just do the same without using `\maketitle`)
