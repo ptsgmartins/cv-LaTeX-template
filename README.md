@@ -19,4 +19,4 @@ The following packages are used:
 - `xcolor` - I use color in the section headers
 - `titling` - customized title block. A bit of overkill (could just do the same without using `\maketitle`)
 
-Also, I set paragraph indentation to 0 em (no indentation) and spacing between paragraphs to 0.5 em. This makes it easier to list things easier, but simply writing one per line.
+Also, I set paragraph indentation to 0 em (no indentation) and spacing between paragraphs to 0.5 em. This makes it easier to list things that don't necessarily look like lists, by simply writing one entry per line.
